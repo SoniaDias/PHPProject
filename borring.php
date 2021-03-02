@@ -1,0 +1,7 @@
+<?php 
+?>
+
+<?php 
+//$trim
+//$substr
+?>
