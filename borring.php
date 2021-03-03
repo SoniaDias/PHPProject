@@ -5,3 +5,5 @@
 //$trim
 //$substr
 ?>
+
+<?php ?>
