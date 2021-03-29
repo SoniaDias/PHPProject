@@ -27,10 +27,10 @@ jobs:
         uses: checkmarx-ts/checkmarx-cxflow-github-action@v1.1
         with:
           project: PHPProject
-          team: /CxServer
-          checkmarx_url: http://340a14adf519.ngrok.io
-          checkmarx_username: admin@cx
-          checkmarx_password: Password123@456
-          checkmarx_client_secret: 014DF517-39D1-4453-B7B3-9930C563627C
+          team: ${{ secrets.CHECKMARX_TEAM }}
+          checkmarx_url: ${{ secrets.CHECKMARX_URL }}
+          checkmarx_username: ${{ secrets.CHECKMARX_USERNAME }}
+          checkmarx_password: ${{ secrets.CHECKMARX_PASSWORD }}
+          checkmarx_client_secret: ${{ secrets.CHECKMARX_CLIENT_SECRET }}
           break_build: false
           scanners: sast
