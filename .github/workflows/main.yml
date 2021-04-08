@@ -26,17 +26,17 @@ jobs:
 
       # Scan code with Checkmarx
       - name: Checkmarx CxFlow Action
-        run: echo Hello, world! 
-        #uses: checkmarx-ts/checkmarx-cxflow-github-action@v1.1
-        #with:
-          #project: PHPProject
-          #team: ${{ secrets.CHECKMARX_TEAM }}
-          #checkmarx_url: ${{ secrets.CHECKMARX_URL }}
-          #checkmarx_username: ${{ secrets.CHECKMARX_USERNAME }}
-          #checkmarx_password: ${{ secrets.CHECKMARX_PASSWORD }}
-          #checkmarx_client_secret: ${{ secrets.CHECKMARX_CLIENT_SECRET }}
-          #break_build: false
-          #scanners: sast
+        #run: echo Hello, world! 
+        uses: checkmarx-ts/checkmarx-cxflow-github-action@v1.1
+        with:
+          project: PHPProject
+          team: ${{ secrets.CHECKMARX_TEAM }}
+          checkmarx_url: ${{ secrets.CHECKMARX_URL }}
+          checkmarx_username: ${{ secrets.CHECKMARX_USERNAME }}
+          checkmarx_password: ${{ secrets.CHECKMARX_PASSWORD }}
+          checkmarx_client_secret: ${{ secrets.CHECKMARX_CLIENT_SECRET }}
+          break_build: false
+          scanners: sast
           
             # Upload SARIF report for CodeQL / Security Alerts PRocessing
       - name: Upload SARIF file
