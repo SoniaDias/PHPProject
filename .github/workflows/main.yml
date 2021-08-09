@@ -33,7 +33,7 @@ jobs:
           team: \CxServer
           checkmarx_url: http://52.31.179.105/
           checkmarx_username: admin@cx
-          checkmarx_password: pT62N$@t!J
+          checkmarx_password: H#c2iN36M!
           checkmarx_client_secret: 014DF517-39D1-4453-B7B3-9930C563627C
           break_build: false
           scanners: sast
