@@ -16,8 +16,8 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    #runs-on: ubuntu-latest
-    runs-on: self-hosted 
+    runs-on: ubuntu-latest
+    #runs-on: self-hosted 
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -30,11 +30,11 @@ jobs:
         uses: checkmarx-ts/checkmarx-cxflow-github-action@v1.1
         with:
           project: PHPProject
-          team: ${{ secrets.CHECKMARX_TEAM }}
-          checkmarx_url: ${{ secrets.CHECKMARX_URL }}
-          checkmarx_username: ${{ secrets.CHECKMARX_USERNAME }}
-          checkmarx_password: ${{ secrets.CHECKMARX_PASSWORD }}
-          checkmarx_client_secret: ${{ secrets.CHECKMARX_CLIENT_SECRET }}
+          team: \CxServer
+          checkmarx_url: http://52.31.179.105/
+          checkmarx_username: admin@cx
+          checkmarx_password: pT62N$@t!J
+          checkmarx_client_secret: 014DF517-39D1-4453-B7B3-9930C563627C
           break_build: false
           scanners: sast
           
