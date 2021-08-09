@@ -30,7 +30,7 @@ jobs:
         uses: checkmarx-ts/checkmarx-cxflow-github-action@v1.1
         with:
           project: PHPProject
-          team: \CxServer
+          team: CxServer
           checkmarx_url: http://52.31.179.105/
           checkmarx_username: admin@cx
           checkmarx_password: H#c2iN36M!
