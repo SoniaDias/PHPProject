@@ -9,4 +9,4 @@ foreach( $list as $entry ) {
         fwrite( $file_handle, $entry );
     }
 }
-fclose( $file_handle );
+fclose( $file_handle );;
